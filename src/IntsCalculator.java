@@ -18,7 +18,7 @@ public class IntsCalculator implements Ints {
     }
 
     @Override
-    public int pow(int a, int b) {  // a в степень b
+    public int pow(int a, int b) {   // a в степень b
         int pow = 1;
         //считаем через target
         return pow;
