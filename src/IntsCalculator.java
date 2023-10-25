@@ -5,22 +5,34 @@ public class IntsCalculator implements Ints {
 
     @Override
     public int sum(int arg0, int arg1) {
-        int summ = 0;
-        //считаем через target
-        return summ;
+        int sum = (int) target
+                .newFormula()
+                .addOperand(arg0)
+                .addOperand(arg1)
+                .calculate(Calculator.Operation.SUM)
+                .result();
+        return sum;
     }
 
     @Override
     public int mult(int arg0, int arg1) {
-        int mult = 1;
-        //считаем через target
+        int mult = (int) target
+                .newFormula()
+                .addOperand(arg0)
+                .addOperand(arg1)
+                .calculate(Calculator.Operation.MULT)
+                .result();
         return mult;
     }
 
     @Override
     public int pow(int a, int b) {   // a в степень b
-        int pow = 1;
-        //считаем через target
+        int pow = (int) target
+                .newFormula()
+                .addOperand(a)
+                .addOperand(b)
+                .calculate(Calculator.Operation.MULT)
+                .result();
         return pow;
     }
 }
